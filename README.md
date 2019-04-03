@@ -6,6 +6,7 @@ CREATE TABLE `users` (
   `created_at` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 copy this second into sql
+<br/>
 CREATE TABLE `nametable2` (
   `name` varchar(20) NOT NULL,
   `email` varchar(30) NOT NULL,
