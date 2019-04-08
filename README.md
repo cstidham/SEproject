@@ -18,4 +18,12 @@ CREATE TABLE `nametable2` (
   `breakfast` text NOT NULL,
   `message` longtext NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-...
+
+
+
+*Contact table*
+CREATE TABLE `contact` (
+  `name` text NOT NULL,
+  `email` text NOT NULL,
+  `message` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
