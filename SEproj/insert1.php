@@ -1,5 +1,5 @@
 <html>
-
+<link rel="stylesheet" href="./css/style1.css">
 <body>
 
 
@@ -8,7 +8,7 @@
 
 <?php
 
-$con = mysql_connect("localhost","root","","demo2");
+$con = mysql_connect("localhost","root","","demo");
 
 if (!$con)
 
@@ -24,11 +24,11 @@ mysql_select_db("demo", $con);
 
 
 
-$sql="INSERT INTO nametable2 (name, email, cidate, codate, guest, children, bed, breakfast, message)
+$sql="INSERT INTO contact (name, email, message)
 
 VALUES
 
-('$_POST[name]','$_POST[email]','$_POST[cidate]','$_POST[codate]','$_POST[guest]','$_POST[children]','$_POST[bed]','$_POST[breakfast]','$_POST[message]')";
+('$_POST[name]','$_POST[email]','$_POST[message]')";
 
 
 
@@ -40,7 +40,7 @@ if (!mysql_query($sql,$con))
 
   }
 
-echo "Thank you for booking with us you will recieve a email confirmation";
+echo "Thank you for contacting us you will recieve a email as soon as possible";
 
 
 

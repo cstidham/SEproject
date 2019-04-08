@@ -10,6 +10,7 @@ body{
   width:80%;
   margin:auto;
   overflow:hidden;
+  float: left;
 }
 
 ul{
@@ -39,10 +40,11 @@ ul{
 /* Header **/
 header{
 
-  color:#ffffff;
+  background: black;
+  color: #ffffff;
   padding-top:30px;
   min-height:70px;
-  border-bottom:black 3px solid;
+  border-bottom:gold 3px solid;
 }
 
 header a{
@@ -116,7 +118,7 @@ header a:hover{
 }
 
 #newsletter form {
-  float:right;
+  float:left;
   margin-top:15px;
 
 }
@@ -149,6 +151,9 @@ aside#sidebar{
   float:center;
   width:90%;
   margin-top:10px;
+}
+btn{
+  color: white;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
